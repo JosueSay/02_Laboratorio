@@ -44,3 +44,9 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+
+fun main(){
+    val infix = "2+12-3*(3-2)"
+    val resultado = InfixToPostfix().infixtoPostfix(infix)
+    println(resultado)
+}
