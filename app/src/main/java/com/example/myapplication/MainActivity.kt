@@ -46,7 +46,11 @@ fun GreetingPreview() {
 }
 
 fun main(){
-    val infix = "2+12-3*(3-2)"
+    val infix = "(454+(34*2))-5"
     val resultado = InfixToPostfix().infixtoPostfix(infix)
     println(resultado)
+    val interpretar = Interpretador()
+    val calculadora = Calculadora()
+    val resultado2 = interpretar.interpretarEntrada(resultado,calculadora)
+    println(resultado2)
 }
