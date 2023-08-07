@@ -22,6 +22,10 @@ class Calculadora {
         this.operationRecently = ultimoResultado
     }
 
+    fun resultadoReciente ():Double{
+        return this.operationRecently
+    }
+
 
 
 }
